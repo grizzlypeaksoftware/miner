@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Mining Adventure</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>Space Mining Adventure</h1>
     <div id="gameContainer">
         <canvas id="gameCanvas" width="800" height="600"></canvas>
         <div id="stats">
             <p>Minerals: <span id="minerals">0</span> | Ship Level: <span id="shipLevel">1</span> | Health: <span id="health">100</span></p>
         </div>
     </div>
+    <div id="instructions">
+        <h2>How to Play</h2>
+        <ul>
+            <li>Use arrow keys to move your spaceship</li>
+            <li>Collect minerals from asteroids</li>
+            <li>Avoid pirates to prevent damage</li>
+            <li>Encounter aliens to upgrade your ship</li>
+        </ul>
+    </div>
+    <footer>
+        <p>View the <a href="https://github.com/grizzlypeaksoftware/miner" target="_blank">source code on GitHub</a></p>
+    </footer>
     <img id="playerSprite" src="player-sprite.png" style="display: none;">
     <img id="alienSprite" src="alien-sprite.png" style="display: none;">
     <img id="pirateSprite" src="pirate-sprite.png" style="display: none;">
