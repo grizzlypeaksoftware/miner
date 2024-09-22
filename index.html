@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Mining Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="stats">
+            <p>Minerals: <span id="minerals">0</span> | Ship Level: <span id="shipLevel">1</span> | Health: <span id="health">100</span></p>
+        </div>
+    </div>
+    <img id="playerSprite" src="player-sprite.png" style="display: none;">
+    <img id="alienSprite" src="alien-sprite.png" style="display: none;">
+    <img id="pirateSprite" src="pirate-sprite.png" style="display: none;">
+    <img id="asteroidSprite" src="asteroid-sprite.png" style="display: none;">
+    <script src="game.js"></script>
+</body>
+</html>

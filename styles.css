@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 1px solid #fff;
+}
+
+#stats {
+    margin-top: 20px;
+}
