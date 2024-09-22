@@ -4,6 +4,8 @@ Space Mining Adventure is an exciting arcade-style game where you pilot a spaces
 
 ## How to Play
 
+[Play Here](https://grizzlypeaksoftware.github.io/miner/)
+
 1. Use the arrow keys to navigate your spaceship.
 2. Collect minerals by colliding with asteroids.
 3. Avoid space pirates to prevent damage to your ship.
