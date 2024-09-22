@@ -26,6 +26,25 @@ let asteroids = [];
 let pirates = [];
 let aliens = [];
 
+// Mobile control buttons
+const upButton = document.getElementById('upButton');
+const leftButton = document.getElementById('leftButton');
+const rightButton = document.getElementById('rightButton');
+const downButton = document.getElementById('downButton');
+
+// Mobile control event listeners
+upButton.addEventListener('touchstart', () => player.moveUp = true);
+upButton.addEventListener('touchend', () => player.moveUp = false);
+leftButton.addEventListener('touchstart', () => player.moveLeft = true);
+leftButton.addEventListener('touchend', () => player.moveLeft = false);
+rightButton.addEventListener('touchstart', () => player.moveRight = true);
+rightButton.addEventListener('touchend', () => player.moveRight = false);
+downButton.addEventListener('touchstart', () => player.moveDown = true);
+downButton.addEventListener('touchend', () => player.moveDown = false);
+
+// Prevent default touch behavior to avoid scrolling
+document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+
 function createAsteroid() {
     return {
         x: Math.random() * canvas.width,

@@ -8,31 +8,41 @@ body {
     background-color: #000;
     color: #fff;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+    width: 100%;
 }
 
 #gameContainer {
     text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
 }
 
 #gameCanvas {
     border: 1px solid #fff;
+    max-width: 100%;
+    height: auto;
 }
 
 #stats {
     margin-top: 20px;
     font-size: 14px;
+    width: 100%;
 }
 
 #instructions {
     margin-top: 30px;
     text-align: center;
     font-size: 12px;
+    width: 100%;
+    max-width: 800px;
 }
 
 #instructions h2 {
@@ -52,6 +62,8 @@ h1 {
 footer {
     margin-top: 20px;
     font-size: 12px;
+    width: 100%;
+    text-align: center;
 }
 
 a {
@@ -61,4 +73,63 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Mobile Controls */
+#mobileControls {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 300px;
+}
+
+#mobileControls button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+/* Show mobile controls on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    #mobileControls {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #gameContainer {
+        padding-bottom: 100px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #instructions {
+        font-size: 10px;
+    }
+
+    #instructions h2 {
+        font-size: 16px;
+    }
+
+    #stats {
+        font-size: 12px;
+    }
 }
